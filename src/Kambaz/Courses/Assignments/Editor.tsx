@@ -3,7 +3,7 @@ export default function AssignmentEditor() {
       <div id="wd-assignments-editor">
         <h3> Assignment Name</h3>
         <input id="wd-name" value="A1 - ENV + HTML" /><br /><br />
-        <textarea id="wd-description" cols={30} rows={10}>
+        <textarea id="wd-description" cols={50} rows={10}>
           The assignment is available online Submit a link to the landing page of
           your Web application running on Netlify. The landing page should also include 
           the following: your full name and section Links to each of the lab
@@ -12,19 +12,21 @@ export default function AssignmentEditor() {
           landing page
         </textarea>
 
-        <br />
+        <br/><br/>
         
         <table>
           <tr>
             <td align="right" valign="top">
               <label htmlFor="wd-points">Points</label>
             </td>
-            <td valign="top">
+            <td>
               <input id="wd-points" value={100} />
             </td>
-            </tr>
+          </tr>
 
-            <tr>
+          <br/>
+
+          <tr>
             <td align="right" valign="top">
               <label htmlFor="wd-passignment">Assignment Group</label>
             </td>
@@ -36,26 +38,26 @@ export default function AssignmentEditor() {
                     <option value="DISCUSSIONS">DISCUSSIONS</option>
                 </select>
             </td>
-            </tr>
+          </tr>
 
-            <tr>
+          <br/>
+
+          <tr>
             <td align="right" valign="top">
               <label htmlFor="wd-submission">Submission Type</label>
             </td>
-            <td valign="top">
+            <td>
                 <select id="wd-select-one-submission">
                     <option value="ONLINE">ONLINE</option>
                 </select>
-
-                
             </td>
-            </tr>
+          </tr>
 
-            <tr>
-            <td align="right" valign="top">
-              <label htmlFor="wd-submission"></label>
-            </td>
-            <td align="left" valign="top">
+          <br/>
+
+          <tr>
+            <td align="right" valign="top"></td>
+            <td>
                 <label>Online Entry Options</label><br/>
 
                 <input type="checkbox" name="check-online-entry" id="wd-chkbox-text"/>
@@ -73,18 +75,58 @@ export default function AssignmentEditor() {
                 <input type="checkbox" name="check-online-entry" id="wd-chkbox-file"/>
                 <label htmlFor="wd-chkbox-file">File Uploads</label><br/>
             </td>
-            </tr>
+          </tr>
 
-            <tr>
-                <td align="right" valign="top">
-                <label htmlFor="wd-assign">Assign</label> Assign to
-                </td>
-                <td>
-                <input id="wd-points" value={"Everyone"} />
-                </td>
-            </tr>
+          <br/>
 
+          <tr>
+            <td align="right" valign="top">
+              <label htmlFor="wd-assign">Assign</label>
+            </td>
+            <td>
+            <label htmlFor="wd-assign">Assign to</label> <br></br>
+              <input id="wd-assign" value={"Everyone"} />
+            </td>
+          </tr>
+
+          <br/>
+          
+          <tr>
+            <td align="right" valign="top">
+            </td>
+            <td>
+            <label htmlFor="wd-due">Due</label> <br></br>
+              <input type="date" value="2025-01-21" id="wd-text-fields-due"/><br/>
+            </td>
+          </tr>
+
+          <br/>
+
+          <tr>
+            <td align="right" valign="top">
+            </td>
+            <td valign="top">
+            <label htmlFor="wd-from">Available from</label> <br></br>
+              <input type="date" value="2025-01-21" id="wd-btn-from"/><br/>
+            </td>
+            <td>
+            <label htmlFor="wd-until">Until</label> <br></br>
+              <input type="date" value="2025-01-21" id="wd-btn-to"/><br/>
+            </td>
+          </tr>
+
+          <br/>
         </table>
+
+      <table align="right">
+        <tr>
+          <td align="right" valign="bottom">
+            <button>cancel</button> <button>save</button>
+          </td>
+        </tr>
+      </table>
+
       </div>
+      
   );}
   
