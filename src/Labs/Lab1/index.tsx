@@ -272,7 +272,7 @@ to render the gaps.
         <a href="https://www.lipsum.com" id="wd-lipsum"> click here </a>
          to get dummy text<br/>
         Please 
-        <a href="https://github.com/olivial215" id="wd-github"> click here </a>
+        <a href="https://github.com/olivial215/kambaz-react-web-app" id="wd-github"> click here </a>
          for my github <br/>
          
       </div>
