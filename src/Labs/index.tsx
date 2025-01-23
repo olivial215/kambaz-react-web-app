@@ -7,7 +7,11 @@ import Lab3 from "./Lab3";
 export default function Labs() {
   return (
     <div>
-      <h1>Olivia Li's Labs</h1>
+      <h1>Labs</h1>
+      <h4>Name: Olivia Li <br></br> Section: 2 
+      <br></br> <a href = "https://github.com/olivial215/kambaz-react-web-app" target="_blank">Github</a></h4>
+
+
       <TOC />
       <Routes>
         <Route path="/" element={<Navigate to="Lab1" />} />
