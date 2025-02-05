@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from "react-router";
-import AccountNavigation from "./Navigation";
 
 import Signin from "./Signin";
 import Profile from "./Profile";
@@ -11,7 +10,6 @@ export default function Account() {
         <table>
         <tr>
           <td valign="top">
-            <AccountNavigation />
           </td>
           <td valign="top">
         <Routes>

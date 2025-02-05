@@ -165,7 +165,7 @@ to render the gaps.
             <br />
             Loading a local image:
             <br />
-            <img id="wd-teslabot" src="public/images/teslabot.jpg" height="200px" />
+            <img id="wd-teslabot" src="/public/images/teslabot.jpg" height="200px" />
         </div>
         <div id="wd-forms">
         <h4>Form Elements</h4>
