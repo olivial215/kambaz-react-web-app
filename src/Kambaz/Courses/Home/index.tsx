@@ -3,24 +3,14 @@ import CourseStatus from "./Status";
 
 export default function Home() {
   return (
-    <table id="wd-home">
-      <tr>
-        <td>
-           <button>Collapse All</button> 
-           <button>View Progress</button>
-           <select id="wd-select-one-publish-option">
-              <option value="ALL">Publish All</option>
-           </select>
-           <button>+ Module</button>
-        </td>
-      </tr>
-      <tr>
-        <td valign="top">
-          <Modules />
-        </td>
-        <td valign="top">
-          <CourseStatus />
-        </td>
-      </tr>
-    </table>
+<div className="d-flex" id="wd-home">
+  <div className="flex-fill me-3">
+    <Modules />
+  </div>
+
+  <div className="d-none d-xl-block">
+    <CourseStatus />
+  </div>
+</div>
+
 );}

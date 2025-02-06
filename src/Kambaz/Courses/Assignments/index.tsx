@@ -1,31 +1,78 @@
+import { ListGroup } from "react-bootstrap";
+import { BsGripVertical } from "react-icons/bs";
+import LessonControlButtons from "../Modules/ModuleControlButtons";
+import { MdAssignment, MdOutlineAssignment } from "react-icons/md";
+import { FcTodoList } from "react-icons/fc";
+import { RiTodoFill } from "react-icons/ri";
+import { Form, InputGroup, FormControl, FormSelect, Col, Row} from "react-bootstrap";
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import { BiPlus, BiSearch } from "react-icons/bi";
+
 export default function Assignments() {
     return (
       <div id="wd-assignments">
-        <input placeholder="Search for Assignments"
-               id="wd-search-assignment" />
-        <button id="wd-add-assignment-group">+ Group</button>
-        <button id="wd-add-assignment">+ Assignment</button>
-        <h3 id="wd-assignments-title">
-          ASSIGNMENTS 40% of Total <button>+</button> </h3>
-        <ul id="wd-assignment-list">
-          <li className="wd-assignment-list-item">
+
+<div className="container">
+
+        
+        <InputGroup className="mb-3">
+            <InputGroup.Text><BiSearch></BiSearch></InputGroup.Text>
+            <FormControl placeholder= {"Search for Assignments"}/>
+        <button className="btn btn-red"> <BiPlus/> Assignment</button>
+        <button className="btn btn-secondary"> <BiPlus/>  Group</button>
+        
+        </InputGroup>  
+        
+</div>
+        <br/><br/>
+          
+          <ListGroup className="rounded-0" id="wd-modules">
+    <ListGroup.Item className="wd-module p-0 mb-5 fs-5 border-gray">
+      <div className="wd-title p-3 ps-2 bg-secondary">
+        <BsGripVertical className="me-2 fs-3" /> Assignments 
+          <LessonControlButtons />
+        </div>
+        
+      <ListGroup className="wd-lessons rounded-0">
+        <ListGroup.Item className="wd-lesson p-3 ps-1">
+          
+    
+            <BsGripVertical className="me-2 fs-3" />
+            <MdOutlineAssignment/>
             <a href="#/Kambaz/Courses/1234/Assignments/123"
                className="wd-assignment-link" >
-              A1 - ENV + HTML
-              </a><br></br>Multiple Modules | Not available until May 6 at 12:00 am | Due May 27 at 11:59pm | 100 pts</li>
+              A1 
+              </a> 
 
-          <li className="wd-assignment-list-item">
-          <a href="#/Kambaz/Courses/1234/Assignments/123"
+            <LessonControlButtons />
+        </ListGroup.Item>
+
+        <ListGroup.Item className="wd-lesson p-3 ps-1">
+            <BsGripVertical className="me-2 fs-3" />
+            <MdOutlineAssignment/>
+            <a href="#/Kambaz/Courses/1234/Assignments/123"
                className="wd-assignment-link" >
-              A1 - ENV + HTML
-              </a><br></br>Multiple Modules | Not available until May 6 at 12:00 am | Due May 27 at 11:59pm | 100 pts</li>
-            
-            <li className="wd-assignment-list-item">
-          <a href="#/Kambaz/Courses/1234/Assignments/123"
+              A2
+              </a>
+            <LessonControlButtons />
+        </ListGroup.Item>
+
+        <ListGroup.Item className="wd-lesson p-3 ps-1">
+            <BsGripVertical className="me-2 fs-3" />
+            <MdOutlineAssignment/>
+            <a href="#/Kambaz/Courses/1234/Assignments/123"
                className="wd-assignment-link" >
-              A1 - ENV + HTML
-            </a><br></br>Multiple Modules | Not available until May 6 at 12:00 am | Due May 27 at 11:59pm | 100 pts</li>
-        </ul>
+              A3
+              </a>
+               <LessonControlButtons />
+        </ListGroup.Item>
+      
+      </ListGroup>
+    </ListGroup.Item>
+  </ListGroup>
+
+
+
       </div>
   );}
   
