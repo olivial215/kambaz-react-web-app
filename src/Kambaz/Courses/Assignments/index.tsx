@@ -1,11 +1,8 @@
 import { ListGroup } from "react-bootstrap";
 import { BsGripVertical } from "react-icons/bs";
 import LessonControlButtons from "../Modules/ModuleControlButtons";
-import { MdAssignment, MdOutlineAssignment } from "react-icons/md";
-import { FcTodoList } from "react-icons/fc";
-import { RiTodoFill } from "react-icons/ri";
-import { Form, InputGroup, FormControl, FormSelect, Col, Row} from "react-bootstrap";
-import { FaMagnifyingGlass } from "react-icons/fa6";
+import { MdOutlineAssignment } from "react-icons/md";
+import { InputGroup, FormControl} from "react-bootstrap";
 import { BiPlus, BiSearch } from "react-icons/bi";
 
 export default function Assignments() {

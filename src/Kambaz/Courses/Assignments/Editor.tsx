@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+
 import "./Editor.css"
-import { Form, FormSelect, Row, Col, FormGroup, FormLabel, FormControl } from "react-bootstrap";
+import { Form, FormSelect, Row, Col, FormGroup, FormControl } from "react-bootstrap";
 
 export default function AssignmentEditor() {
     return (

@@ -4,9 +4,9 @@ import { BiHome, BiImport, BiNotification } from "react-icons/bi";
 import { LiaFileImportSolid } from "react-icons/lia";
 import { Button } from "react-bootstrap";
 import { IoAnalytics } from "react-icons/io5";
-import { GrAnnounce } from "react-icons/gr";
+
 import { TfiAnnouncement } from "react-icons/tfi";
-import { CiStreamOff } from "react-icons/ci";
+
 import { BsEye } from "react-icons/bs";
 
 export default function CourseStatus() {
